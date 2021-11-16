@@ -21,8 +21,8 @@ reboot
 # Install VICIDIAL Now
 
 ```
-git clone https://github.com/jaganthoutam/vicidial-install-centos7.git
-cd vicidial-install-scripts
+git clone https://github.com/xceedconnections/vicidial.git
+cd vicidial-install-vicidial
 ```
 
 # Excute Centos vididial Install
