@@ -42,5 +42,12 @@ chmod +x vicidial-install-ubuntu18.sh
 
 ```
 chmod +x vicidial-enable-webrtc.sh
-./vicidial-enable-webrtc.sh
+./vicidial-enable-webrtc.sh 
+
+echo "SELECT server_ip, UNIX_TIMESTAMP(last_update),UNIX_TIMESTAMP(db_time) from server_updater" | mysql -uroot asterisk && php -r "date_default_timezone_set('America/New_York'); echo 'php time: '.date('U');" && echo ""
+
+cd /usr/src/astguiclient/trunk
+perl install.pl
+
+/usr/share/astguiclient/ADMIN_update_server_ip.pl --old-server_ip=10.10.10.15
 ```
